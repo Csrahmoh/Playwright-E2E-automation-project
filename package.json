@@ -1,0 +1,19 @@
+{
+  "name": "playwright-ecommerce-tests",
+  "version": "1.0.0",
+  "description": "E2E Automation Testing Suite for SauceDemo using Playwright",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:smoke": "npx playwright test tests/smoke --project=chromium",
+    "test:e2e": "npx playwright test tests/e2e --project=chromium",
+    "test:regression": "npx playwright test tests/regression",
+    "test:all-browsers": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "report": "npx playwright show-report",
+    "codegen": "npx playwright codegen https://www.saucedemo.com"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0"
+  }
+}
